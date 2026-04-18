@@ -41,8 +41,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();   // 👈 necesario para servir recursos
 app.UseRouting();
 
-app.UseAuthentication();   // 👈 primero
-app.UseAuthorization();    // 👈 después
+//app.UseAuthentication();   // 👈 primero
+//app.UseAuthorization();    // 👈 después
 
 app.MapRazorPages();       // 👈 limpio, sin WithStaticAssets
 
