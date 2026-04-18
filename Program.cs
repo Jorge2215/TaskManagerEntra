@@ -15,14 +15,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 // 🔑 Autenticación con Entra ID
-builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
-    .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"));
+//builder.Services.AddAuthentication(OpenIdConnectDefaults.AuthenticationScheme)
+//    .AddMicrosoftIdentityWebApp(builder.Configuration.GetSection("AzureAd"));
 
-builder.Services.AddAuthorization();
+//builder.Services.AddAuthorization();
 
-builder.Services.AddRazorPages()
-    .AddMicrosoftIdentityUI(); // habilita SignIn/SignOut
+//builder.Services.AddRazorPages()
+//    .AddMicrosoftIdentityUI(); // habilita SignIn/SignOut
 
+builder.Services.AddRazorPages();
 var app = builder.Build();
 
 // 🔧 Pipeline
