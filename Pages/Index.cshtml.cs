@@ -5,8 +5,7 @@ using TaskManager.Data;
 
 
 namespace TaskManager.Pages
-{
-    [Authorize]
+{    
     public class IndexModel : PageModel
     {
         private readonly AppDbContext _context;
